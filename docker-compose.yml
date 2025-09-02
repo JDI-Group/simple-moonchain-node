@@ -6,7 +6,7 @@ x-logging: &logging
 
 services:
   l2_execution_engine:
-    image: us-docker.pkg.dev/moonchain-com/images/moonchain-geth:moonchain-hudson
+    image: us-docker.pkg.dev/moonchain-com/images/moonchain-geth:moonchain
     restart: unless-stopped
     pull_policy: always
     env_file:
@@ -54,7 +54,7 @@ services:
       - proposer
 
   moonchain_client_driver:
-    image: us-docker.pkg.dev/moonchain-com/images/moonchain-client:moonchain-hudson
+    image: us-docker.pkg.dev/moonchain-com/images/moonchain-client:moonchain
     restart: unless-stopped
     pull_policy: always
     depends_on:
@@ -75,7 +75,7 @@ services:
       - proposer
 
   moonchain_client_prover_relayer:
-    image: us-docker.pkg.dev/moonchain-com/images/moonchain-client:moonchain-hudson
+    image: us-docker.pkg.dev/moonchain-com/images/moonchain-client:moonchain
     restart: unless-stopped
     pull_policy: always
     depends_on:
@@ -96,7 +96,7 @@ services:
       - prover
 
   moonchain_client_proposer:
-    image: us-docker.pkg.dev/moonchain-com/images/moonchain-client:moonchain-hudson
+    image: us-docker.pkg.dev/moonchain-com/images/moonchain-client:moonchain
     restart: unless-stopped
     pull_policy: always
     depends_on:
