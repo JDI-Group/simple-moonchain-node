@@ -39,7 +39,7 @@ if [ "$ENABLE_PROPOSER" = "true" ]; then
         ARGS="${ARGS} --txPool.locals ${TXPOOL_LOCALS}"
     fi
 
-    if [ -n "$TX_POOL_BLOCK_ADDRESSES" ]; then
+    if [ -n "${TX_POOL_BLOCK_ADDRESSES:-}" ]; then
         ARGS="${ARGS} --txPool.blockAddresses ${TX_POOL_BLOCK_ADDRESSES}"
     fi
 
