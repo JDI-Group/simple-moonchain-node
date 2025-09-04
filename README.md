@@ -1,4 +1,4 @@
-# simple-mxc-node
+# simple-mch-node
 
 Detailed steps are here : https://doc.moonchain.com/docs/Testnet-Tutorials/Run-Moonchain-Supernode
 
